@@ -1,6 +1,6 @@
 # CEP v1 e v2
 
-## Informações referentes a CEPs versão 1 e 2git push -u origin main
+## Informações referentes a CEPs versão 1 e 2
 
 API púlica de consulta de CEP
 
