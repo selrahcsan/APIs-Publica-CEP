@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "cc3ee6d5-d9b2-4854-ac08-275f218153c1",
+		"name": "CEP",
+		"description": "# CEP v1 e v2\n\n## Informações referentes a CEPs versão 2\n\nAPI púlica de consulta de CEP\n\n## Fonte\n\n[https://brasilapi.com.br/docs#tag/CEP](https://brasilapi.com.br/docs#tag/CEP)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23585574"
+	},
+	"item": [
+		{
+			"name": "CEP",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://brasilapi.com.br/api/cep/v1/68628-504",
+					"protocol": "https",
+					"host": [
+						"brasilapi",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"cep",
+						"v1",
+						"68628-504"
+					]
+				},
+				"description": "# CEP\n\n## Informações referentes a CEPs\n\nBusca por CEP com múltiplos providers de fallback.\n\n### HTTP Request:\n\n```\nget https://brasilapi.com.br/api/cep/v1/{cep}\n\n```\n\n### Exemplo Query\n\n```\nhttps://brasilapi.com.br/api/cep/v1/68628-504\n\n```\n\n``` json\n{\n    \"cep\": \"68628504\",\n    \"state\": \"PA\",\n    \"city\": \"Paragominas\",\n    \"neighborhood\": \"Promissão\",\n    \"street\": \"Rua Elson Lima\",\n    \"service\": \"correios\"\n}\n\n```\n\n| Path Parameters |  |\n| --- | --- |\n| cep | integer<64> |\n| required | O CEP (Código de Endereçamento Postal) é um sistema de códigos que visa racionalizar o processo de encaminhamento e entrega de correspondências através da divisão do país em regiões postais. ... Atualmente, o CEP é composto por oito dígitos, cinco de um lado e três de outro. Cada algarismo do CEP possui um significado. |\n\n| Responses |  |\n| --- | --- |\n| 200 | Sucess |\n| 404 | Todos os serviços de CEP retornaram erro |\n\n## Fonte\n\n[https://brasilapi.com.br/docs#tag/CEP](https://brasilapi.com.br/docs#tag/CEP)"
+			},
+			"response": []
+		},
+		{
+			"name": "CEP v2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://brasilapi.com.br/api/cep/v2/61650-420",
+					"protocol": "https",
+					"host": [
+						"brasilapi",
+						"com",
+						"br"
+					],
+					"path": [
+						"api",
+						"cep",
+						"v2",
+						"61650-420"
+					]
+				},
+				"description": "# CEP v2\n\n## Informações referentes a CEPs versão 2\n\nVersão 2 do serviço de busca por CEP com múltiplos providers de fallback.\n\n### HTTP Request:\n\n```\nget https://brasilapi.com.br/api/cep/v2/{cep}\n\n```\n\n### Exemplo Query\n\n```\nhttps://brasilapi.com.br/api/cep/v2/61650-420\n\n```\n\n``` json\n{\n    \"cep\": \"61650420\",\n    \"state\": \"CE\",\n    \"city\": \"Caucaia\",\n    \"neighborhood\": \"Parque Guadalajara (Jurema)\",\n    \"street\": \"Vila Bom Jesus\",\n    \"service\": \"correios\",\n    \"location\": {\n        \"type\": \"Point\",\n        \"coordinates\": {}\n    }\n}\n\n```\n\n| Path Parameters |  |\n| --- | --- |\n| cep | integer<64> |\n| required | O CEP (Código de Endereçamento Postal) é um sistema de códigos que visa racionalizar o processo de encaminhamento e entrega de correspondências através da divisão do país em regiões postais. ... Atualmente, o CEP é composto por oito dígitos, cinco de um lado e três de outro. Cada algarismo do CEP possui um significado. |\n\n| Responses |  |\n| --- | --- |\n| 200 | Sucess |\n| 404 | Todos os serviços de CEP retornaram erro |\n\n## Fonte\n\n[https://brasilapi.com.br/docs#tag/CEP](https://brasilapi.com.br/docs#tag/CEP)"
+			},
+			"response": []
+		}
+	]
+}
